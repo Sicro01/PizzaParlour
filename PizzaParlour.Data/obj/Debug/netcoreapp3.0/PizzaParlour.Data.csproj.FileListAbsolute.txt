@@ -1,0 +1,7 @@
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\bin\Debug\netcoreapp3.0\PizzaParlour.Data.deps.json
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\bin\Debug\netcoreapp3.0\PizzaParlour.Data.dll
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\obj\Debug\netcoreapp3.0\PizzaParlour.Data.csprojAssemblyReference.cache
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\obj\Debug\netcoreapp3.0\PizzaParlour.Data.AssemblyInfoInputs.cache
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\obj\Debug\netcoreapp3.0\PizzaParlour.Data.AssemblyInfo.cs
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\bin\Debug\netcoreapp3.0\PizzaParlour.Data.runtimeconfig.json
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Data\bin\Debug\netcoreapp3.0\PizzaParlour.Data.runtimeconfig.dev.json
