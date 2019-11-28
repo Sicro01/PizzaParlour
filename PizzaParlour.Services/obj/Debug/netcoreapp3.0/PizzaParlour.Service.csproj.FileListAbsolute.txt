@@ -1,0 +1,11 @@
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\bin\Debug\netcoreapp3.0\PizzaParlour.Service.deps.json
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\bin\Debug\netcoreapp3.0\PizzaParlour.Service.dll
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\bin\Debug\netcoreapp3.0\PizzaParlour.Service.pdb
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\bin\Debug\netcoreapp3.0\PizzaParlour.Data.dll
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\bin\Debug\netcoreapp3.0\PizzaParlour.Data.pdb
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\obj\Debug\netcoreapp3.0\PizzaParlour.Service.csprojAssemblyReference.cache
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\obj\Debug\netcoreapp3.0\PizzaParlour.Service.AssemblyInfoInputs.cache
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\obj\Debug\netcoreapp3.0\PizzaParlour.Service.AssemblyInfo.cs
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\obj\Debug\netcoreapp3.0\PizzaParlour.Service.csproj.CopyComplete
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\obj\Debug\netcoreapp3.0\PizzaParlour.Service.dll
+C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour.Services\obj\Debug\netcoreapp3.0\PizzaParlour.Service.pdb
