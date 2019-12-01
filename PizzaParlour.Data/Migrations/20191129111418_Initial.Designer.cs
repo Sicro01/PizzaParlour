@@ -10,7 +10,7 @@ using PizzaParlour.Data;
 namespace PizzaParlour.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191128153044_Initial")]
+    [Migration("20191129111418_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,7 +36,7 @@ namespace PizzaParlour.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Depth");
+                    b.ToTable("Depths");
                 });
 
             modelBuilder.Entity("PizzaParlour.Data.Models.Pizza", b =>
@@ -61,7 +61,7 @@ namespace PizzaParlour.Data.Migrations
 
                     b.HasIndex("SizeId");
 
-                    b.ToTable("Pizza");
+                    b.ToTable("Pizzas");
                 });
 
             modelBuilder.Entity("PizzaParlour.Data.Models.PizzaTopping", b =>
@@ -83,7 +83,7 @@ namespace PizzaParlour.Data.Migrations
 
                     b.HasIndex("ToppingId");
 
-                    b.ToTable("PizzaTopping");
+                    b.ToTable("PizzaToppings");
                 });
 
             modelBuilder.Entity("PizzaParlour.Data.Models.Size", b =>
@@ -101,7 +101,7 @@ namespace PizzaParlour.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Size");
+                    b.ToTable("Sizes");
                 });
 
             modelBuilder.Entity("PizzaParlour.Data.Models.Topping", b =>
@@ -119,7 +119,7 @@ namespace PizzaParlour.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Topping");
+                    b.ToTable("Toppings");
                 });
 
             modelBuilder.Entity("PizzaParlour.Data.Models.Pizza", b =>

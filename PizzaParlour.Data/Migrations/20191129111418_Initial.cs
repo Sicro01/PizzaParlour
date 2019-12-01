@@ -7,7 +7,7 @@ namespace PizzaParlour.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Depth",
+                name: "Depths",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -17,11 +17,11 @@ namespace PizzaParlour.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Depth", x => x.Id);
+                    table.PrimaryKey("PK_Depths", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Size",
+                name: "Sizes",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -31,11 +31,11 @@ namespace PizzaParlour.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Size", x => x.Id);
+                    table.PrimaryKey("PK_Sizes", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Topping",
+                name: "Toppings",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -45,11 +45,11 @@ namespace PizzaParlour.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Topping", x => x.Id);
+                    table.PrimaryKey("PK_Toppings", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Pizza",
+                name: "Pizzas",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -60,23 +60,23 @@ namespace PizzaParlour.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pizza", x => x.Id);
+                    table.PrimaryKey("PK_Pizzas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Pizza_Depth_DepthId",
+                        name: "FK_Pizzas_Depths_DepthId",
                         column: x => x.DepthId,
-                        principalTable: "Depth",
+                        principalTable: "Depths",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Pizza_Size_SizeId",
+                        name: "FK_Pizzas_Sizes_SizeId",
                         column: x => x.SizeId,
-                        principalTable: "Size",
+                        principalTable: "Sizes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
-                name: "PizzaTopping",
+                name: "PizzaToppings",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -86,58 +86,58 @@ namespace PizzaParlour.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PizzaTopping", x => x.Id);
+                    table.PrimaryKey("PK_PizzaToppings", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PizzaTopping_Pizza_PizzaId",
+                        name: "FK_PizzaToppings_Pizzas_PizzaId",
                         column: x => x.PizzaId,
-                        principalTable: "Pizza",
+                        principalTable: "Pizzas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_PizzaTopping_Topping_ToppingId",
+                        name: "FK_PizzaToppings_Toppings_ToppingId",
                         column: x => x.ToppingId,
-                        principalTable: "Topping",
+                        principalTable: "Toppings",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Pizza_DepthId",
-                table: "Pizza",
+                name: "IX_Pizzas_DepthId",
+                table: "Pizzas",
                 column: "DepthId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Pizza_SizeId",
-                table: "Pizza",
+                name: "IX_Pizzas_SizeId",
+                table: "Pizzas",
                 column: "SizeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PizzaTopping_PizzaId",
-                table: "PizzaTopping",
+                name: "IX_PizzaToppings_PizzaId",
+                table: "PizzaToppings",
                 column: "PizzaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PizzaTopping_ToppingId",
-                table: "PizzaTopping",
+                name: "IX_PizzaToppings_ToppingId",
+                table: "PizzaToppings",
                 column: "ToppingId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PizzaTopping");
+                name: "PizzaToppings");
 
             migrationBuilder.DropTable(
-                name: "Pizza");
+                name: "Pizzas");
 
             migrationBuilder.DropTable(
-                name: "Topping");
+                name: "Toppings");
 
             migrationBuilder.DropTable(
-                name: "Depth");
+                name: "Depths");
 
             migrationBuilder.DropTable(
-                name: "Size");
+                name: "Sizes");
         }
     }
 }

@@ -6,6 +6,6 @@ namespace PizzaParlour.Data
     public interface ISize
     {
         Size GetById(int Id);
-        IEnumerable<Size> GetAll();
+        List<Size> GetAll();
     }
 }

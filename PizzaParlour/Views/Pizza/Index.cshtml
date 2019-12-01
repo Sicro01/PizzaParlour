@@ -1,0 +1,123 @@
+﻿@model PizzaParlour.Models.PizzaViewModels.PizzaListingModel
+
+@{
+    ViewData["Title"] = "Papa Bob's";
+}
+
+<div class="ml-5">
+    <div class="row justify-content-center align-items-center">
+        <img src="~/Content/Images/PapaBob.png" />
+        <h1>Papa Bob's Pizza and Software</h1>
+    </div>
+    <hr />
+    <form asp-action="Order" asp-controller="Pizza">
+        <h6>Choose your pizza size:</h6>
+        <table class="table table-hover" id="pizzaSizeTable">
+            <tbody>
+                <tr class="d-flex text-center">
+                    <th class="col-md-3">
+                        @{
+                            <label asp-for="@Model.Sizes.FirstOrDefault().Description"></label>
+                        }
+                    </th>
+                    <th class="col-md-3">
+                        @{
+                            <label asp-for="@Model.Sizes.FirstOrDefault().Price"></label>
+                        }
+                    </th>
+                </tr>
+                @foreach (var item in Model.Sizes)
+                {
+                    <tr class="d-flex">
+                        <td class="col-md-3">
+                            @*@Html.RadioButtonFor(model => Model.Sizes[i].Id, Model.Sizes[i].Description) @Model.Sizes[i].Description*@
+                            <input type="radio" asp-for="SelectedSize" value="@item.Description" class="align-middle" />
+                            <span class="align-middle">@item.Description&nbsp;&nbsp;&nbsp;- </span>
+                        </td>
+                    </tr>
+                }
+
+                @*@foreach (var pizzaItem in Model.Sizes)
+        {
+            <tr class="d-flex">
+                <td class="col-md-3">
+                    <input type="radio" asp-for="@pizzaItem.Id" value="@pizzaItem.Description" class="form-control align-middle" />
+                    <span class="align-middle">@pizzaItem.Description &nbsp;&nbsp;&nbsp;- </span>
+                </td>
+                <td class="col-md-3 align-middle">
+                    <span class="align-middle">@pizzaItem.Price</span>
+                </td>
+            </tr>
+        }*@
+            </tbody>
+        </table>
+        <h6>Choose your pizza depth:</h6>
+        <table class="table table-hover" id="pizzaDepthTable">
+            <tbody>
+                <tr class="d-flex text-center">
+                    <th class="col-md-3">
+                        @{
+                            <label asp-for="@Model.Depths.FirstOrDefault().Description"></label>
+                        }
+                    </th>
+                    <th class="col-md-3">
+                        @{
+                            <label asp-for="@Model.Depths.FirstOrDefault().Price"></label>
+                        }
+                    </th>
+                </tr>
+                @foreach (var pizzaItem in Model.Depths)
+                {
+                    <tr class="d-flex">
+                        <td class="col-md-3">
+                            <input class="align-middle" asp-controller="Pizza" asp-action="Order" type="radio" />
+                            <span class="align-middle">@pizzaItem.Description &nbsp;&nbsp;&nbsp;- </span>
+                        </td>
+                        <td class="col-md-3 align-middle">
+                            <span class="align-middle">@pizzaItem.Price</span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <h6>Choose your pizza toppings:</h6>
+        <table class="table table-hover" id="pizzaToppingTable">
+            <tbody>
+                <tr class="d-flex text-center">
+                    <th class="col-md-3">
+                        @{
+                            <label asp-for="@Model.Toppings.FirstOrDefault().Description"></label>
+                        }
+                    </th>
+                    <th class="col-md-3">
+                        @{
+                            <label asp-for="@Model.Toppings.FirstOrDefault().Price"></label>
+                        }
+                    </th>
+                </tr>
+                @foreach (var pizzaItem in Model.Toppings)
+                {
+                    <tr class="d-flex">
+                        <td class="col-md-3">
+                            <input class="align-middle" asp-controller="Pizza" asp-action="Order" type="checkbox" />
+                            <span class="align-middle">@pizzaItem.Description &nbsp;&nbsp;&nbsp;- </span>
+                        </td>
+                        <td class="col-md-1 align-middle">
+                            <span class="align-middle">@pizzaItem.Price</span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <h2>
+            Papa Bob's<span class="text-danger"> Special Deal</span>
+        </h2>
+        <br />
+        <p>Save $2.00 when you add Pepperoni, Green Peppers and Anchovies OR Pepperoni, Red Peppers and Onions to your order.</p>
+        <br />
+        <input type="submit" class="btn btn-primary" value="Purchase" />
+    </form>
+</div>
+
+

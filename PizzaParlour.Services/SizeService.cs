@@ -15,9 +15,11 @@ namespace PizzaParlour.Service
             _context = context;
         }
 
-        public IEnumerable<Size> GetAll()
+        public List<Size> GetAll()
         {
-            return _context.Sizes;
+            List<Size> sizes;
+            sizes = _context.Sizes.ToList();
+            return sizes;
         }
 
         public Size GetById(int Id)
