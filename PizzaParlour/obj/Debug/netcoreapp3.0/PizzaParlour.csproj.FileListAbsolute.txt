@@ -414,4 +414,3 @@ C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\Pi
 C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour\obj\Debug\netcoreapp3.0\PizzaParlour.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour\obj\Debug\netcoreapp3.0\PizzaParlour.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\770000411\OneDrive - Genpact\02 - Personal\CProjects\PizzaParlourApp\PizzaParlour\obj\Debug\netcoreapp3.0\Razor\Views\Pizza\Index.cshtml.g.cs
